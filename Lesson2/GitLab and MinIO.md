@@ -25,4 +25,5 @@
  }
 ```
 And reconfigure gitlab `sudo gitlab-ctl reconfigure`
-4. After creating and pulling GitLab repo you should initialize `lfs` by this tutorial [https://git-lfs.github.com/](https://git-lfs.github.com/)
+
+4.After creating and pulling GitLab repo you should initialize `lfs` by this tutorial [https://git-lfs.github.com/](https://git-lfs.github.com/)
