@@ -1,11 +1,8 @@
-### GitLab variables
-variable "gitlab_project_list" {
-  type = list(string)
+variable "minio_domain" {
+  type    = string
+  default = "minio.example.com"
 }
 
-
-
-### MinIO variables
 variable "minio_user_access_key" {
   type = string
 }
