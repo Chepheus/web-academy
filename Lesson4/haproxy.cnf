@@ -1,0 +1,11 @@
+frontend myfrontend
+  bind 127.0.0.1:8000
+  use_backend google if { path_beg /google/ }
+  default_backend myservers
+
+backend myservers
+  server server1 127.0.0.1:90
+  server server2 127.0.0.1:92
+
+backend google
+  server google_server1 127.0.0.1:91

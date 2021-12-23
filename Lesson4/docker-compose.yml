@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  server1:
+    image: nginxdemos/hello:plain-text
+    restart: always
+    ports:
+      - "90:80"
+    networks:
+      custom_network:
+
+  server2:
+    image: nginxdemos/hello:plain-text
+    restart: always
+    ports:
+      - "91:80"
+    networks:
+      custom_network:
+
+  server3:
+    image: nginxdemos/hello:plain-text
+    restart: always
+    ports:
+      - "92:80"
+    networks:
+      custom_network:
+
+networks:
+  custom_network:
