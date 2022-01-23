@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-academy-nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: web-academy-nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: web-academy-nginx
+    spec:
+      containers:
+      - name: web-academy-nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
